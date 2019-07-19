@@ -13,8 +13,10 @@ float plot(vec2 st, float pct) {
 
 void main() {
   vec2 st = gl_FragCoord.xy / u_resolution;
-  float x = (st.x * 2.0) - 1.0;
-  float y = 1.0 - pow(abs(x), 0.5);
+  float x = (st.x * 10.0) - 1.0;
+  float y = 1.0 - pow(abs(x), 2.0);
+  
+  // float y = pow(cos(PI * x / 2.0), 1.5);
   vec3 color = vec3(y);
 
   float pct = plot(st, y);
@@ -23,3 +25,4 @@ void main() {
 
   gl_FragColor = vec4(color, 1.0);
 }
+
