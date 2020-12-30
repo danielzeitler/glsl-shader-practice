@@ -1,4 +1,4 @@
-# GLSL Shader Practice
+# Practicing GLSL Shader 
 
 Here is a summary of tools I use for my shader practice sessions. The focus of these sessions is to make it as easy as possible to play around with the fragment shader. With that in mind this setup has been proven to be useful:
 
